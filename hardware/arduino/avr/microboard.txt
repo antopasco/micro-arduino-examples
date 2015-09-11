@@ -1,0 +1,34 @@
+
+##############################################################
+
+iprotoxi.name=iProtoXi Micro
+iprotoxi.vid.0=0x28FA
+iprotoxi.pid.0=0x0036
+iprotoxi.vid.1=0x28FA
+iprotoxi.pid.1=0x8036
+iprotoxi.upload.tool=avrdude
+iprotoxi.upload.protocol=avr109
+iprotoxi.upload.maximum_size=28672
+iprotoxi.upload.maximum_data_size=2560
+iprotoxi.upload.speed=57600
+iprotoxi.upload.disable_flushing=true
+iprotoxi.upload.use_1200bps_touch=true
+iprotoxi.upload.wait_for_upload_port=true
+
+iprotoxi.bootloader.tool=avrdude
+iprotoxi.bootloader.low_fuses=0xff
+iprotoxi.bootloader.high_fuses=0xd8
+iprotoxi.bootloader.extended_fuses=0xcb
+iprotoxi.bootloader.file=iprotoxi/iprotoxi-micro-bootloader.hex
+iprotoxi.bootloader.unlock_bits=0xFF
+iprotoxi.bootloader.lock_bits=0xEF
+
+iprotoxi.build.mcu=atmega32u4
+iprotoxi.build.f_cpu=16000000L
+iprotoxi.build.vid=0x28FA
+iprotoxi.build.pid=0x8036
+iprotoxi.build.usb_product="iProtoXi Micro"
+iprotoxi.build.board=AVR_IPROTOXI
+iprotoxi.build.core=iprotoxi
+iprotoxi.build.variant=iprotoxi_micro
+iprotoxi.build.extra_flags={build.usb_flags}

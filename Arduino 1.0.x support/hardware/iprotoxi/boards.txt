@@ -1,0 +1,22 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+##############################################################
+
+iprotoxi.name=iProtoXi Micro
+iprotoxi.upload.protocol=avr109
+iprotoxi.upload.maximum_size=28672
+iprotoxi.upload.speed=57600
+iprotoxi.upload.disable_flushing=true
+iprotoxi.bootloader.low_fuses=0xff
+iprotoxi.bootloader.high_fuses=0xd8
+iprotoxi.bootloader.extended_fuses=0xcb
+iprotoxi.bootloader.path=caterina
+iprotoxi.bootloader.file=iprotoxi-micro-bootloader.hex
+iprotoxi.bootloader.unlock_bits=0xFF
+iprotoxi.bootloader.lock_bits=0xEF
+iprotoxi.build.mcu=atmega32u4
+iprotoxi.build.f_cpu=16000000L
+iprotoxi.build.vid=0x28FA
+iprotoxi.build.pid=0x8036
+iprotoxi.build.core=iprotoxi
+iprotoxi.build.variant=iprotoxi_micro
